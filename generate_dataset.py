@@ -32,6 +32,7 @@ while True:
             (x+w, y+h), # top right of the rectangle
             (0, 255, 0), # border colour
             2) # border width
+        coords = [x, y, w, h]
 
     cv2.imshow("Identified Faces", img)
 
@@ -40,7 +41,8 @@ while True:
 
     # save image or stop the loop
     if key == ord('s'):
-        saveImage(original_img, user_name, user_id, count)
+        cropped_img = original_img[y:y+h, x:x+w]
+        saveImage(cropped_img, user_name, user_id, count)
         count += 1
     elif key == ord('q'):
         break
