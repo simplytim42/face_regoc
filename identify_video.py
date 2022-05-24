@@ -8,7 +8,7 @@ while True:
     _, img = vc.read()
 
     grey_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-e
+    
     #detect faces within the image
     faces = face_cascade.detectMultiScale(grey_img, scaleFactor=1.2, minNeighbors=5, minSize=(50,50))
 
