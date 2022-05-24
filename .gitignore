@@ -1,3 +1,7 @@
+# general
 env/
-dataset/
+__pycache__
+
+#project specific
 face1.jpg
+dataset/
