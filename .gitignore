@@ -5,3 +5,4 @@ __pycache__
 #project specific
 face1.jpg
 dataset/
+training.yml
