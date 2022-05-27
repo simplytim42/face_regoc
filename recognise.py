@@ -39,7 +39,7 @@ while True:
         if id:
             cv2.putText(
                 img,
-                names[id-1] + ". Confidence: " + str(confidence), # the name of the user
+                names[id-1] + ". Confidence: " + str(int(confidence)) + "%", # the name of the user
                 (x, y-4), # coords of the text
                 cv2.FONT_HERSHEY_SIMPLEX, # ?
                 0.8, # ?
